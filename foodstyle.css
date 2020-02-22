@@ -15,6 +15,10 @@
   src: url(fonts/analogue85black.ttf);
   font-family:analog;
 }
+@font-face{
+  src:url(fonts/lmsans8-regular.otf);
+  font-family:simple;
+}
 hr{
   display:none;
 }
@@ -38,7 +42,7 @@ button:focus{
 .navbar{
   padding:0;
 }
-#navbar_supported_content {
+#navbar_supported_content{
   position: absolute;
   z-index: 2;
   width: 100%;
@@ -55,6 +59,7 @@ button:focus{
 }
 a,a:hover{
   color:white;
+  font-family:simple;
   text-decoration:none;
 }
 .nav-item:hover a{
