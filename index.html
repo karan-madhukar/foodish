@@ -60,47 +60,38 @@
       </a>
     </div> 
   </section>
-  <!--div class="flex-container banner">
-    <div><img src="images/plate-image.png" alt="plate-image" id="plate"></div>
-    <div class="banner-content">
-      <h5 class="welcome">Welcome</h5>
-      <h5 class="to">to food fun</h5>
-      <p class="lorem">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a ante venenatis, ullamcorper odio id,  interdum lacus. Curabitur dignissim rutrum nibh aliquet fermentum.
-          Lorem ipsum dolor sit amet. 
-      </p>
-    </div>
-  </!--div-->
+
   <div class="container-fluid">
     <div class="row banner">
-      <div class="col-md">
-        <img src="images/plate-image.png" alt="plate-image" id="plate">
+      <div class="col-md plate">
+        <img src="images/plate-image.png" alt="plate-image" id="plate-img">
       </div>
       <div class="col-md banner-content">
         <h5 class="welcome">Welcome</h5>
-        <h5 class="to">to food fun</h5>
+        <h6 class="to">to food fun</h6>
         <p class="lorem">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a ante venenatis, ullamcorper odio id,  interdum lacus. Curabitur dignissim rutrum nibh aliquet fermentum.
             Lorem ipsum dolor sit amet.<span id="extra-tablet"> consectetur adipiscing elit. Fusce a ante venenatis,</span><span id="extra-desktop"> ullamcorper odio id, interdum lacus. curabitur</span>
         </p>
-
       </div>
     </div>
-
   </div>
+  
   <section class="food-banner">
     <h4 id="update">Our <span class="foodstyle">food</span> update</h4>
-    <div class="flex-container">
-      <div class="food-img"><img src="images/food1.jpg" alt="foodimages" class="food1"></div>
-      <div class="food-img"><img src="images/food2.jpg" alt="foodimages" class="food1"></div>
-      <div class="food-img"><img src="images/food3.jpg" alt="foodimages" class="food1"></div>
-      <div class="food-img"><img src="images/food4.jpg" alt="foodimages" class="food1"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md food-img crop1"><img src="images/food1.jpg" alt="foodimages" class="food1"></div>
+        <div class="col-md food-img crop2"><img src="images/food2.jpg" alt="foodimages" class="food1"></div>
+        <div class="col-md food-img crop3"><img src="images/food3.jpg" alt="foodimages" class="food1"></div>
+        <div class="col-md food-img crop4"><img src="images/food4.jpg" alt="foodimages" class="food1"></div>
+      </div>
     </div>
   </section>
   
   <div class="container-fluid quick">
     <div class="row">
-      <div class="col-md-3 quick-links">
+      <div class="col-md-3 col-lg-3 quick-links">
         <h6>Quick Links</h6>
         <ul class="links">
           <li class="link-list"><a href="#">Home</a></li>
@@ -109,14 +100,14 @@
           <li class="link-list"><a href="#">Contact</a></li>
         </ul>
       </div>  
-      <div class="col-md-4">
+      <div class="col-md-5 col-lg-4">
         <form action="/action_page.php">
           <label for="fname">NewsLetter</label><br>
           <input type="text" id="fname" name="fname" placeholder=" Enter Email Address"><br>
           <input type="submit" value="Subscribe">
         </form> 
       </div>
-      <div class="col-md-5 contact-info">
+      <div class="col-md-4 col-lg-5 contact-info">
         <h6>Contact Info</h6>
         <div class="row contacts">
           <div class="col-1 small-icon"><img src="images/location-icon.png" alt="location-icon-images"></div>
@@ -142,12 +133,14 @@
       <div class="col-md-6 followus">
         <ul class="later">
           <li class="follow">Follow us:</li>
-          <ul class="follow">            
+          <li class="follow">
+            <ul class="follow">         
               <li class="first"><img src="images/fb.png" alt="facebookicon" class="icons"></li>
               <li class="first"><img src="images/google-plus.png" alt="googleicon" class="icons"></li>
               <li class="first"><img src="images/twiiter.png" alt="twittericon" class="icons"></li>
               <li class="first"><img src="images/skype.png" alt="skypeicon" class="icons"></li>
-          </ul>
+            </ul>
+          </li> 
         </ul>
       </div>
     </div>
