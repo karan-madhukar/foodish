@@ -22,7 +22,7 @@
 hr{
   display:none;
 }
-.navbar-toggler-icon {
+.navbar-toggler-icon{
   position: absolute;
   right:15px;
   bottom:11px;
@@ -75,8 +75,6 @@ a,a:hover{
 .carousel-item img{
   height:200px;
 }
-
-
 .carousel-indicators li {
   width: 10px!important;
   height: 10px!important;
@@ -86,12 +84,10 @@ a,a:hover{
 #carousel_controls{
   z-index: 1;
 }
-
 .carousel-caption h4{
   font-size:30px;
   font-family: hen;
 }
-
 #plate-img{
   width: 100%;
   padding:15px 7% 0;
@@ -126,7 +122,6 @@ a,a:hover{
 .banner-heading::first-letter{
   font-size:10vw;
 }
-
 #update{
   font-family:analog;
   font-weight:900;
@@ -158,43 +153,39 @@ a,a:hover{
 .crop4 img{
   margin:-100px 0 -100px 0;
 }
-
-.quick{
+.quick-link-section{
   background-color:#111312;
   color:white;
   margin-top:30px;
 }
-.quick-links{
-  margin-bottom:-10px;
-}
-.quick-links h6{
+.quick-links h2{
   font-weight:600;
-  margin-top:25px;
-  font-size:19px;
+  margin:25px 0 7px;
+  font-size:17px;
 }
 .links{
   list-style-type:none;
-  padding:0px;
+  padding: 0px;
+  margin-bottom: 10px;
 }
 .link-list a{
-  font-size:17px;
-  margin-left:1px;
-  margin-right:10px;
+  font-size:15px;
+  margin:0 20px 0 1px;
 }
 .link-list{
   display:inline;
 }
 label
 {
-  font-size:19px;
+  font-size:17px;
   font-weight:600;
-  margin-top:20px;
+  margin-top:22px;
 }
 input#fname{
   color:grey;
   border:0;
   height:35px;
-  width:225px;
+  width:240px;
 }
 input[type="submit"]{
   background-color:#c57901;
@@ -208,21 +199,18 @@ input[type="submit"]{
 ::placeholder{
   font-size:15px;
 }
-.contact-info h6{
-  margin:22px 0 8px;
+.contact-info-header{
+  margin:25px 0 10px;
   font-weight:600;
-  font-size:19px;
+  font-size:17px;
 }
-.info{
+.details p{
   font-size:15px;
-}
-form{
-  margin-bottom:10px;
 }
 .details{
   padding-left:10px;
 }
-.small-icon{
+.contact-info-icon{
   padding-right:0;
 }
 .page-footer{
@@ -230,34 +218,28 @@ form{
   text-align:center;
   color:white;
 }
-.copyright{
+.copyright-section{
   font-size:11px;
   padding-top:10px;
 }
-.copyright p{
+.copyright-section p{
   margin-bottom:5px;
 }
-  
-.later {
+.followus-section{
   padding: 0;
   margin-top: 6px;
 }
-
-.first {
+.social-media-icon {
   padding: 0;
   display: inline;
 }
-
-.later li{
+.followus-section li{
   list-style: none;
 }
-
-
 .follow{
   font-size:11px;
   padding:0;
 }
-
 .icons{
   margin:0 5px  0;
 }
@@ -312,10 +294,9 @@ form{
     font-size:88px;
   }
   .carousel-item img{
-    height:54vh;
+    height:71vh;
   }
-  
-  .plate{
+  .plate-img-section{
     padding:0;
   }
   #plate-img{
@@ -370,28 +351,24 @@ form{
   label{
     margin-bottom:14px;
   }
-  .contact-info h6{
-    margin-bottom:15px;
-  }
-  .info{
+  .details p{
     margin-bottom:25px;
   }
-  .small-icon{
+  .contact-info-icon{
     padding-right:3px;
   }
   .details{
     padding-left:15px;
   }
-  .copyright{
+  .copyright-section{
     text-align:left;
   }
-  .later {
+  .followus-section {
     float: right;
   }
   .follow {
     display: inline;
   }
-  
 }
 
 /*desktop view from 992px*/
@@ -399,20 +376,9 @@ form{
   .max-width{
     max-width: 1170px;
   }
-  
   #extra-desktop{
     display:inline;
   }
-  .carousel-indicators li {
-    width: 20px!important;
-    height: 20px!important;
-    border-radius: 50%;
-    border:2px solid orange;
-  }
-  .carousel-item img{
-    height:60vh;
-  }
- 
   #plate-img{
     width:140%;
     margin:50px 0 0 85px;
@@ -438,6 +404,25 @@ form{
   }
   #update{
     font-size:50px;
+  }
+}
+/*for extra large */
+@media (min-width: 1480px){
+  .banner-heading{
+    font-size:40px;
+  }
+  .banner-heading::first-letter{
+    font-size:50px;
+  }
+  .banner-sub-heading{
+    font-size:40px;
+  }
+  .banner-text{
+    font-size:23px;
+    line-height:1.9;
+  }
+  .banner-content{
+    height:600px;
   }
 }
 
