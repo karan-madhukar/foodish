@@ -12,11 +12,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="foodstyle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
 </head>
 
-<body>
+<body class="container-fluid px-0">
   <header>
-    <div class="container-fluid max-width nav-container">
+    <div class="my-container">
       <img src="images/logo.png" alt="spoon-logo" id="navbar_logo"><hr>
       <nav class="navbar navbar-expand-md">  
         <button class="navbar-toggler navbar-toggler-icon" type="button" data-toggle="collapse"
@@ -36,10 +37,6 @@
 
   <section>
     <div id="carousel_controls" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carousel_controls" data-slide-to="0"></li>
-        <li data-target="#carousel_controls" data-slide-to="1"></li>
-      </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="d-block w-100" src="images/slide.jpg" alt="space">
@@ -55,12 +52,16 @@
       </a>
       <a class="carousel-control-next" href="#carousel_controls" role="button" data-slide="next">
       </a>
+      <ol class="carousel-indicators">
+        <li data-target="#carousel_controls" data-slide-to="0"></li>
+        <li data-target="#carousel_controls" data-slide-to="1"></li>
+      </ol>
     </div> 
   </section>
   
   <main>
-    <div class="container-fluid max-width">
-      <div class="row banner">
+    <div class="my-container">
+      <div class="row extra-padding banner">
         <div class="col-md plate-img-section">
           <img src="images/plate-image.png" alt="plate-image" id="plate-img">
         </div>
@@ -68,8 +69,8 @@
           <p class="banner-heading">Welcome</p>
           <p class="banner-sub-heading">to food fun</p>
           <p class="banner-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a ante venenatis, ullamcorper odio id,  interdum lacus. Curabitur dignissim rutrum nibh aliquet fermentum.
-              Lorem ipsum dolor sit amet.<span id="extra-tablet"> consectetur adipiscing elit. Fusce a ante venenatis,</span><span id="extra-desktop"> ullamcorper odio id, interdum lacus. curabitur</span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a ante venenatis, ullamcorper odio id,  interdum lacus. Curabitur dignissim rutrum nibh aliquet fermentum.
+            Lorem ipsum dolor sit amet.<span id="extra-tablet"> consectetur adipiscing elit. Fusce a ante venenatis,</span><span id="extra-desktop"> ullamcorper odio id, interdum lacus. curabitur</span>
           </p>
         </div>
       </div>
@@ -78,20 +79,18 @@
 
   <section class="food-banner">
     <h4 id="update">Our <span class="foodstyle">food</span> update</h4>
-    <div class="container-fluid max-width">
-      <div class="row">
-        <div class="col-md food-img crop1"><img src="images/food1.jpg" alt="foodimages" class="d-block"></div>
-        <div class="col-md food-img crop2"><img src="images/food2.jpg" alt="foodimages" class="d-block"></div>
-        <div class="col-md food-img crop3"><img src="images/food3.jpg" alt="foodimages" class="d-block"></div>
-        <div class="col-md food-img crop4"><img src="images/food4.jpg" alt="foodimages" class="d-block"></div>
-      </div>
+    <div class="row extra-padding">
+      <div class="col-md food-img crop1"><img src="images/food1.jpg" alt="foodimages" class="food-banner-img"></div>
+      <div class="col-md food-img crop2"><img src="images/food2.jpg" alt="foodimages" class="food-banner-img"></div>
+      <div class="col-md food-img crop3"><img src="images/food3.jpg" alt="foodimages" class="food-banner-img"></div>
+      <div class="col-md food-img crop4"><img src="images/food4.jpg" alt="foodimages" class="food-banner-img"></div>
     </div>
   </section>
   
   <section class="quick-link-section">
-    <div class="container-fluid max-width">
-      <div class="row">
-        <div class="col-md-3 col-lg-3 quick-links">
+    <div class="my-container">
+      <div class="row extra-padding">
+        <div class="col-md-3 quick-links">
           <h2>Quick Links</h2>
           <ul class="links">
             <li class="link-list"><a href="#">Home</a></li>
@@ -100,24 +99,24 @@
             <li class="link-list"><a href="#">Contact</a></li>
           </ul>
         </div>  
-        <div class="col-md-5 col-lg-4">
+        <div class="col-md-5">
           <form action="/action_page.php">
             <label for="fname">NewsLetter</label><br>
             <input type="text" id="fname" name="fname" placeholder=" Enter Email Address"><br>
             <input type="submit" value="Subscribe">
           </form> 
         </div>
-        <div class="col-md-4 col-lg-5">
+        <div class="col-md-4 move-left">
           <h2 class="contact-info-header">Contact Info</h2>
-          <div class="row contacts">
+          <div class="row extra-padding contacts">
             <div class="col-1 contact-info-icon"><img src="images/location-icon.png" alt="location-icon-images"></div>
             <div class="col-11 details"><p>1234 Some St San Francisco, CA 94102, US 1.800.123.4567</p></div>
           </div>
-          <div class="row">
+          <div class="row extra-padding">
             <div class="col-1 contact-info-icon"><img src="images/phone-icon.png" alt="phone-icon-images"></div>
             <div class="col-11 details"><p>(123) 456 78 90</p></div>
           </div>
-          <div class="row">
+          <div class="row extra-padding">
             <div class="col-1 contact-info-icon"><img src="images/envelop-icon.png" alt="envelop-icon-images"></div>
             <div class="col-11 details"><p>info@dish.com</p></div>
           </div>
@@ -127,8 +126,8 @@
   </section>
 
   <footer class="page-footer">
-    <div class="container-fluid max-width">
-      <div class="row ">
+    <div class="my-container">
+      <div class="row extra-padding">
         <div class="col-md-6 copyright-section">
           <p>Copyright Dish 2019</p>
         </div>
@@ -137,10 +136,18 @@
             <li class="follow">Follow us:</li>
             <li class="follow">
               <ul class="follow">         
-                <li class="social-media-icon"><img src="images/fb.png" alt="facebookicon" class="icons"></li>
-                <li class="social-media-icon"><img src="images/google-plus.png" alt="googleicon" class="icons"></li>
-                <li class="social-media-icon"><img src="images/twiiter.png" alt="twittericon" class="icons"></li>
-                <li class="social-media-icon"><img src="images/skype.png" alt="skypeicon" class="icons"></li>
+                <li class="social-media-icon">
+                  <a href="#"><img src="images/fb.png" alt="facebookicon" class="icons"></a>
+                </li>
+                <li class="social-media-icon">
+                  <a href="#"><img src="images/google-plus.png" alt="googleicon" class="icons"></a>
+                </li>
+                <li class="social-media-icon">
+                  <a href="#"><img src="images/twiiter.png" alt="twittericon" class="icons"></a>
+                </li>
+                <li class="social-media-icon">
+                  <a href="#"><img src="images/skype.png" alt="skypeicon" class="icons"></a>
+                </li> 
               </ul>
             </li> 
           </ul>
