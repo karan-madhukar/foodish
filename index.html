@@ -1,160 +1,144 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="karan kumar">
-  <title>foodDish</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="karan kumar">
+    <title>foodDish</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="foodstyle.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
-</head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="foodstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
+  </head>
 
-<body class="container-fluid px-0">
-  <header>
-    <div class="my-container">
-      <img src="images/logo.png" alt="spoon-logo" id="navbar_logo"><hr>
-      <nav class="navbar navbar-expand-md">  
-        <button class="navbar-toggler navbar-toggler-icon" type="button" data-toggle="collapse"
-          data-target="#navbar_supported_content"> </button>
+  <body class="container-fluid px-0">
+    <header>
+      <div class="container-max-width">
+        <img src="images/logo.png" alt="spoon-logo" id="navbar_logo"><hr>
+        <nav class="navbar navbar-expand-md">  
+          <button class="navbar-toggler navbar-toggler-icon" type="button" data-toggle="collapse"
+            data-target="#navbar_supported_content"> </button>
 
-        <div class="collapse navbar-collapse" id="navbar_supported_content">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a href="#">Home</a></li>
-            <li class="nav-item"><a href="#">About us</a></li>
-            <li class="nav-item"><a href="#">Menu</a></li>
-            <li class="nav-item"><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>  
-  </header>   
+          <div class="collapse navbar-collapse" id="navbar_supported_content">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="#">Home</a></li>
+              <li class="nav-item"><a href="#">About us</a></li>
+              <li class="nav-item"><a href="#">Menu</a></li>
+              <li class="nav-item"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>  
+    </header>   
 
-  <section>
-    <div id="carousel_controls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="images/slide.jpg" alt="space">
-          <div class="carousel-caption">
-            <h4>Discover the flavors <br> of food</h4> 
+    <main>
+      <div id="carousel_controls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/slide.jpg" alt="space">
+            <div class="carousel-caption">
+              <h4>Discover the flavors <br> of food</h4> 
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/slide.jpg" alt="space">
           </div>
         </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/slide.jpg" alt="space">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carousel_controls" role="button" data-slide="prev">
-      </a>
-      <a class="carousel-control-next" href="#carousel_controls" role="button" data-slide="next">
-      </a>
-      <ol class="carousel-indicators">
-        <li data-target="#carousel_controls" data-slide-to="0"></li>
-        <li data-target="#carousel_controls" data-slide-to="1"></li>
-      </ol>
-    </div> 
-  </section>
-  
-  <main>
-    <div class="my-container">
-      <div class="row extra-padding banner">
+        <a class="carousel-control-prev" href="#carousel_controls" role="button" data-slide="prev">
+        </a>
+        <a class="carousel-control-next" href="#carousel_controls" role="button" data-slide="next">
+        </a>
+        <ol class="carousel-indicators">
+          <li data-target="#carousel_controls" data-slide-to="0"></li>
+          <li data-target="#carousel_controls" data-slide-to="1"></li>
+        </ol>
+      </div> 
+    
+      <div class="row container-max-width">
         <div class="col-md plate-img-section">
           <img src="images/plate-image.png" alt="plate-image" id="plate-img">
         </div>
         <div class="col-md banner-content">
-          <p class="banner-heading">Welcome</p>
-          <p class="banner-sub-heading">to food fun</p>
+          <h3 class="banner-heading">Welcome <br><span class="banner-sub-heading">to food fun</span></h3>
           <p class="banner-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a ante venenatis, ullamcorper odio id,  interdum lacus. Curabitur dignissim rutrum nibh aliquet fermentum.
-            Lorem ipsum dolor sit amet.<span id="extra-tablet"> consectetur adipiscing elit. Fusce a ante venenatis,</span><span id="extra-desktop"> ullamcorper odio id, interdum lacus. curabitur</span>
+            Lorem ipsum dolor sit amet. consectetur adipiscing elit. Fusce a ante venenatis, ullamcorper odio id, interdum lacus. curabitur
           </p>
         </div>
       </div>
-    </div>
-  </main>
+      <section class="food-banner">
+        <h4 id="update">Our <span class="foodstyle">food</span> update</h4>
+        <div class="row no-gutters">
+          <div class="col-md food-img crop1">
+            <img src="images/food1.jpg" alt="food Images-1" class="food-banner-img">
+          </div>
+          <div class="col-md food-img crop2">
+            <img src="images/food2.jpg" alt="food Images-2" class="food-banner-img">
+          </div>
+          <div class="col-md food-img crop3">
+            <img src="images/food3.jpg" alt="food Images-3" class="food-banner-img">
+          </div>
+          <div class="col-md food-img crop4">
+            <img src="images/food4.jpg" alt="food Images-4" class="food-banner-img">
+          </div>
+        </div>
+      </section>
 
-  <section class="food-banner">
-    <h4 id="update">Our <span class="foodstyle">food</span> update</h4>
-    <div class="row extra-padding">
-      <div class="col-md food-img crop1"><img src="images/food1.jpg" alt="foodimages" class="food-banner-img"></div>
-      <div class="col-md food-img crop2"><img src="images/food2.jpg" alt="foodimages" class="food-banner-img"></div>
-      <div class="col-md food-img crop3"><img src="images/food3.jpg" alt="foodimages" class="food-banner-img"></div>
-      <div class="col-md food-img crop4"><img src="images/food4.jpg" alt="foodimages" class="food-banner-img"></div>
-    </div>
-  </section>
-  
-  <section class="quick-link-section">
-    <div class="my-container">
-      <div class="row extra-padding">
-        <div class="col-md-3 quick-links">
-          <h2>Quick Links</h2>
-          <ul class="links">
-            <li class="link-list"><a href="#">Home</a></li>
-            <li class="link-list"><a href="#">About us</a></li>
-            <li class="link-list"><a href="#">Menu</a></li>
-            <li class="link-list"><a href="#">Contact</a></li>
-          </ul>
+      <section class="quick-link-section">
+        <div class="row container-max-width">
+          <div class="col-md-3 col-lg-3 quick-links">
+            <h2>Quick Links</h2>
+            <ul class="links">
+              <li class="link-list"><a href="#">Home</a></li>
+              <li class="link-list"><a href="#">About us</a></li>
+              <li class="link-list"><a href="#">Menu</a></li>
+              <li class="link-list"><a href="#">Contact</a></li>
+            </ul>
+          </div>  
+          <div class="col-md-5 col-lg-4">
+            <form action="/action_page.php">
+              <h2 class="newsletter-heading">NewsLetter</h2>
+              <input type="text" id="fname" name="fname" placeholder=" Enter Email Address"><br>
+              <input type="submit" value="Subscribe">
+            </form> 
+          </div>
+          <div class="col-md-4 col-lg-5">
+            <h2 class="contact-info-header">Contact Info</h2>
+            <div class="row">
+              <div class="col-1 contact-info-icon"><img src="images/location-icon.png" alt="location-icon-images"></div>
+              <div class="col-11 details"><span>1234 Some St San Francisco, CA 94102, US 1.800.123.4567</span></div>
+            </div>
+            <div class="row extra-padding">
+              <div class="col-1 contact-info-icon"><img src="images/phone-icon.png" alt="phone-icon-images"></div>
+              <div class="col-11 details"><span>(123) 456 78 90</span></div>
+            </div>
+            <div class="row extra-padding">
+              <div class="col-1 contact-info-icon"><img src="images/envelop-icon.png" alt="envelop-icon-images"></div>
+              <div class="col-11 details"><span>info@dish.com</span></div>
+            </div>
+          </div>  
         </div>  
-        <div class="col-md-5">
-          <form action="/action_page.php">
-            <label for="fname">NewsLetter</label><br>
-            <input type="text" id="fname" name="fname" placeholder=" Enter Email Address"><br>
-            <input type="submit" value="Subscribe">
-          </form> 
-        </div>
-        <div class="col-md-4 move-left">
-          <h2 class="contact-info-header">Contact Info</h2>
-          <div class="row extra-padding contacts">
-            <div class="col-1 contact-info-icon"><img src="images/location-icon.png" alt="location-icon-images"></div>
-            <div class="col-11 details"><p>1234 Some St San Francisco, CA 94102, US 1.800.123.4567</p></div>
-          </div>
-          <div class="row extra-padding">
-            <div class="col-1 contact-info-icon"><img src="images/phone-icon.png" alt="phone-icon-images"></div>
-            <div class="col-11 details"><p>(123) 456 78 90</p></div>
-          </div>
-          <div class="row extra-padding">
-            <div class="col-1 contact-info-icon"><img src="images/envelop-icon.png" alt="envelop-icon-images"></div>
-            <div class="col-11 details"><p>info@dish.com</p></div>
-          </div>
-        </div>  
-      </div>  
-    </div>  
-  </section>
+      </section>
+    </main>
 
-  <footer class="page-footer">
-    <div class="my-container">
-      <div class="row extra-padding">
-        <div class="col-md-6 copyright-section">
-          <p>Copyright Dish 2019</p>
+    <footer class="page-footer">
+      <div class="d-flex container-max-width display-direction">
+        <div class="copyright-text">
+          <span>Copyright Dish 2019</span>
+        </div>  
+        <div class="followus-section">
+          <span class="followus-text">Follow us:</span>
+          <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" alt="facebookicon" class="icons"></a>
+          <a href="https://plus.google.com/" target="_blank"><img src="images/google-plus.png" alt="googleicon" class="icons"></a>
+          <a href="https://twitter.com/" target="_blank"><img src="images/twiiter.png" alt="twittericon" class="icons"></a>
+          <a href="https://www.skype.com/en/" target="_blank"><img src="images/skype.png" alt="skypeicon" class="icons"></a>
         </div>
-        <div class="col-md-6">
-          <ul class="followus-section">
-            <li class="follow">Follow us:</li>
-            <li class="follow">
-              <ul class="follow">         
-                <li class="social-media-icon">
-                  <a href="#"><img src="images/fb.png" alt="facebookicon" class="icons"></a>
-                </li>
-                <li class="social-media-icon">
-                  <a href="#"><img src="images/google-plus.png" alt="googleicon" class="icons"></a>
-                </li>
-                <li class="social-media-icon">
-                  <a href="#"><img src="images/twiiter.png" alt="twittericon" class="icons"></a>
-                </li>
-                <li class="social-media-icon">
-                  <a href="#"><img src="images/skype.png" alt="skypeicon" class="icons"></a>
-                </li> 
-              </ul>
-            </li> 
-          </ul>
-        </div>
-      </div>
-    </div>  
-  </footer>
-</body>
+      </div> 
+    </footer>
+  </body>
 </html>
     
